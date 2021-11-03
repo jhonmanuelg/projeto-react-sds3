@@ -29,4 +29,10 @@ html, body {
 
 .text-primary {
     color: var(--color-primary) !important;
+   
+}
+
+.link-a{
+    text-decoration: none !important;
+    font-weight: bold !important;
 }

@@ -5,7 +5,7 @@ const Footer = () => {
         <p className="text-light">
           App desenvolvido por{" "}
           <a
-            href="https://github.com/jhonmanuelg"
+            href="https://www.linkedin.com/feed/?trk=nav_back_to_linkedin"
             target="_blank"
             rel="noreferrer" className="text-primary link-a"
           >

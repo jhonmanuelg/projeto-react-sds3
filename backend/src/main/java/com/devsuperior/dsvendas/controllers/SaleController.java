@@ -24,8 +24,8 @@ public class SaleController {
 	
 	@GetMapping
 	public ResponseEntity<Page<SaleDTO>> findAll(Pageable pageable){
-		Page<SaleDTO> Page = service.findAll(pageable);
-		return ResponseEntity.ok(Page);
+		Page<SaleDTO> list = service.findAll(pageable);
+		return ResponseEntity.ok(list);
 	}
 	
 	@GetMapping(value = "/amount-by-seller")

@@ -6,34 +6,36 @@ import NavBar from "components/NavBar";
 
 
 const Dashbord = () => {
-    return (
-        <>
+  return (
+    <>
       <NavBar />
-    <div className="container">
-      <h1 className="text-primary py-3">Dashbord de Vendas</h1>
-      <div className="row px-3">
-        <div className="col-sm-6">
-          <h5 className="text-center text-secondary">taxa de sucesso (%)</h5>
-          <BarChart />
+      <div className="container">
+        <div className=""> 
+        
+        
+        <h1 className="text-primary py-3">Dashbord de Vendas</h1>
+        </div>
+        <div className="row px-3">
+          <div className="col-sm-6">
+            <h5 className="text-center text-secondary">taxa de sucesso (%)</h5>
+            <BarChart />
+          </div>
+
+          <div className="col-sm-6">
+            <h5 className="text-center text-secondary">Todas vendas </h5>
+            <DonutChart />
+          </div>
         </div>
 
-        <div className="col-sm-6">
-          <h5 className="text-center text-secondary">Todas vendas </h5>
-          <DonutChart />
+        <div className="py-3">
+          <h2 className="text-primary"> Todas Vendas</h2>
         </div>
+
+        <DataTable />
       </div>
-
-      <div className="py-3">
-        <h2 className="text-primary"> Todas Vendas</h2>
-
-      </div>
-
-      <DataTable />
-    </div>
-    <Footer />
+      <Footer />
     </>
-    )
-  };
-  
-  export default Dashbord;
-  
+  );
+};
+
+export default Dashbord;
